@@ -42,11 +42,15 @@ public class Buffer {
 	public int retirar() throws InterruptedException {
 		//comprueba que haya productos
 		hayProductos.acquire(); 
+		//comprueba que se pueda usar el buffer
 		mutex.acquire();
+		//paso a la siguiente posición del buffer
 		int aux=j;
 		j=(j+1)%b.length;
 		//System.out.println("Consumidor usó"+b[aux]);
+		//libera el buffer
 		mutex.release();
+		//indica que hay espacio en el buffer
 		hayEspacio.release();
 		return b[aux];
 		

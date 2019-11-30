@@ -3,10 +3,13 @@ package productor_consumidor;
 import java.util.Random;
 
 public class Consumidor  extends Thread{
-	
+	//crea clase random
 	private Random r=new Random();
+	//instancia del buffer
 	private Buffer buffer;
+	//cantDeProductos a consumir
 	private int cantProductos;
+	
 	public Consumidor(Buffer buffer, int cantProductos) {
 		
 		this.buffer=buffer;
