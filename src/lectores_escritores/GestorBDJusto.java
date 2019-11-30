@@ -2,8 +2,10 @@ package lectores_escritores;
 
 public class GestorBDJusto {
 
+	//Numero de lectores
 	private int nLectores = 0;
 	private boolean hayEscritor = false;
+	//Numero de escritores
 	private int nEscritor = 0;
 
 	public synchronized void openL(int id) throws InterruptedException {

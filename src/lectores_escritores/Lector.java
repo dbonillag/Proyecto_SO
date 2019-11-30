@@ -8,11 +8,11 @@ public class Lector extends Thread {
 	private static Random r = new Random();
 	// El objeto pasivo que contiene la base de datos. da permiso para leer y
 	// escribir
-	private GestorBDJusto gestor;
+	private GestorBDLockCasa gestor;
 	//Cada lector tiene un id
 	private int id;
 
-	public Lector(GestorBDJusto gestor, int id) {
+	public Lector(GestorBDLockCasa gestor, int id) {
 		this.gestor = gestor;
 		this.id = id;
 	}

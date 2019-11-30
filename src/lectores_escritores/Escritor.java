@@ -7,11 +7,11 @@ public class Escritor extends Thread {
 	private static Random r = new Random();
 	// El objeto pasivo que contiene la base de datos. da permiso para leer y
 	// escribir
-	private GestorBDJusto gestor;
+	private GestorBDLockCasa gestor;
 	//Cada escritor tiene un id
 	private int id;
 
-	public Escritor(GestorBDJusto gestor, int id) {
+	public Escritor(GestorBDLockCasa gestor, int id) {
 		this.gestor = gestor;
 		this.id = id;
 	}

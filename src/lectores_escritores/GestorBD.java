@@ -4,7 +4,6 @@ public class GestorBD {
 
 	//Numero de lectores
 	private int nLectores = 0;
-	//Numero de escritores
 	private boolean hayEscritor = false;
 
 	public synchronized void openL(int id) throws InterruptedException {

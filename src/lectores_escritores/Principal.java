@@ -4,7 +4,7 @@ public class Principal {
 
 	public static void main(String[] args) {
 
-		GestorBDJusto gestor = new GestorBDJusto();
+		GestorBDLockCasa gestor = new GestorBDLockCasa();
 		//Lista de escritores
 		Escritor[] esc = new Escritor[2];
 		//Lista de lectores
